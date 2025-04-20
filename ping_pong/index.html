@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/tennis_icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="./style/style.css" rel="stylesheet">
+    <title>TABLE TENNIS SCORE</title>
+  </head>
+  <body>
+    <main>
+      <section id="container">
+	<img class="pp-img" src="./assets/pp.jpg" alt="table tennis game">
+	<h1><span id="p1Score">0</span> to <span id="p2Score">0</span></h1>
+	<section class="game-option">
+	  <span class="game-type">game up to:</span>
+	  <select id="gameType">
+	    <option>6</option>
+	    <option>12</option>
+	  </select>
+	  <span class="game-type">points</span>
+	</section>
+	<section id="btn-container">
+	  <button id="p1Btn">P1</button>
+	  <button id="p2Btn">P2</button>
+	  <button id="resetBtn">Reset</button>
+	</section>
+      </section>
+      <p class="hidden"></p>
+    </main>
+<footer>
+  &copy; 2025 Brunorism, All Rights Reserved.
+</footer>
+    <script src="./src/app.js"></script>
+  </body>
+</html>

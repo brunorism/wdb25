@@ -1,0 +1,48 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Delius";
+}
+
+body {
+    background-color: #181818;
+}
+
+.btn {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, button {
+    color: #3e5c76;
+    margin: 1em;
+    transition: color 0.25s, transform 0.30s;
+}
+
+button {
+    padding: 1em;
+    background-color: #181818;
+    color: #3e5c76;
+    border: 2px solid;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+button:hover {
+    color: #f0ebd8;
+    transform: translateY(-0.25em);
+    box-shadow: 0 0.5em 0.5em -0.4em #f0ebd8;
+    cursor: pointer;
+}
+
+button:hover + h1 {
+    color: #f0ebd8;
+    transform: translateY(-0.25em);
+    box-shadow: 0 0.5em 0.5em -0.4em #f0ebd8;
+    cursor: pointer;
+}

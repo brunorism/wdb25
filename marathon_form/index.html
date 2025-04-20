@@ -1,0 +1,70 @@
+<!DOCTYPE HTML5>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./marathon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>IMPOSSIBLE MARATHON</title>
+    <style>
+      * {
+	  font-family: "Montserrat";
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Marathon Registration Form</h1>
+      <hr>
+      <p>
+	<div>
+	  <label for="FirstName">First Name: </label>
+	  <input type="text" name="firstname" id="FirstName" placeholder="John" required>
+	  <label for="LastName">Last Name: </label>
+	  <input type="text" name="lastname" id="LastName" placeholder="Doe">
+
+	</div>
+      </p>
+
+      <p>
+	<div>
+	  <h3>Select a Race</h3>
+	  <input type="radio" name="racetype" id="Half" value="half">
+	  <label for="Half">Half Marathon</label>
+	  <br>
+	  <input type="radio" name="racetype" id="Full" value="full">
+	  <label for="Full">Full Marathon</label>
+	  <br>
+	  <input type="radio" name="racetype" id="HundredK" value="100k">
+	  <label for="HundredK">100K Marathon</label>
+	</div>
+      </p>
+
+      <div>
+	<label for="Email">Email: </label>
+	<input type="email" placeholder="john@doe.com" id="Email" required>
+
+	<label for="Password">Password: </label>
+	<input type="password" placeholder="password" id="Password" minlength="6" maxlength="16" required>
+      </div>
+
+      <div>
+	<label for="Age">Group: </label>
+	<select name="age" id="Age">
+	  <option value="">-- Select your Group --</option>
+	  <option value="child">&lt; 17</option>
+	  <option value="young">18-29</option>
+	  <option value="adult">30-59</option>
+	  <option value="senior">&gt; 60</option>
+	</select>
+      </div>
+
+      <button type="submit">
+	Register
+      </button>
+
+    </form>
+  </body>
+</html>
